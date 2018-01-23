@@ -1,0 +1,57 @@
+<div class="grid-x click-group">
+  <div class="small-4 cell" (click)="onSelect('vision')">
+    <img class="click" src="..\assets\img\vision-icon1.svg">
+    <span>Vision</span>
+    <div class="arrow" *ngIf="selected === 'vision'">
+      <img src="..\assets\img\arrow-up.png">
+    </div>
+  </div>
+  <div class="small-4 cell" (click)="onSelect('mission')">
+    <img class="click" src="..\assets\img\mission-icon.svg">
+    <span>Mission</span>
+    <div class="arrow" *ngIf="selected === 'mission'">
+      <img src="..\assets\img\arrow-up.png">
+    </div>
+  </div>
+  <div class="small-4 cell" (click)="onSelect('believe')">
+    <img class="click" src="..\assets\img\what-we-believe-icon1.svg">
+    <span>What-we-believe</span>
+    <div class="arrow" *ngIf="selected === 'believe'">
+      <img src="..\assets\img\arrow-up.png">
+    </div>
+  </div>
+</div>
+<div class="description" *ngIf="selected">
+  <div class="text-box">
+    <div class="close">
+      <img src="..\assets\img\close.png" (click)="selected = ''">
+    </div>
+    <div *ngIf="selected === 'vision'">
+      <span>We are warm and welcoming family of God where people from different nations grow together in Christ.</span>
+    </div>
+    <div *ngIf="selected === 'mission'">
+      <span>Helping people grow through: <br/>
+        A. Learning and living the Word of God <br/>
+        B. Building a relationship with God and one another <br/>
+        C. Reaching out to our neighbours with the love of Jesus</span>
+    </div>
+    <div *ngIf="selected === 'believe'">
+      <span>We believe in God as eternal Father, Son, and Holy Spirit. God created and sustains the universe. The eternal purpose of God the Father is to create a people who will bring glory to God forever. God alone is worthy of worship. <br/><br/>
+
+        We believe that God became human in Jesus Christ. Jesus came to restore the world because humans have rejected God in disobedience. Jesus taught and modeled the way of God’s kingdom. He died on the cross, making it possible for us to accept a renewed relationship with God. He rose from the dead, broke the power of sin and death, and frees us to live in obedience to God’s will. <br/><br/>
+        
+        We believe that God the Holy Spirit invites all people to be reconciled with God and to join the global family of faith. Believers confess their faith, are baptized, and join in the celebration of the Lord’s Supper. Through the power of the Holy Spirit and guided by the Bible, members of the church seek to live as followers of Christ and invite others to experience this new life. <br/><br/>
+        
+        As Christians, we are called to turn: <br/>
+         • from ignorance of God to a personal relationship with God <br/>
+         • from bondage of sin and past mistakes to freedom, forgiveness, and healing <br/>
+         • from individualism to interdependence with others in the local church <br/>
+         • from lifestyle choices that harm us, others, and the earth to choices that nurture wholeness, healing, joy, and peace <br/>
+         • from hating enemies and ignoring neighbours to showing love and justice to all <br/>
+         • from loving possessions to sharing with all in need <br/>
+         • from aimless existence to a mission of representing and proclaiming God’s kingdom on earth <br/><br/>
+        
+        As Christians, we look forward to the day when God will once again send Jesus to bring all things under God’s eternal rule. </span>
+    </div>
+  </div>
+</div>

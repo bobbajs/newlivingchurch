@@ -1,0 +1,76 @@
+.title {
+    background: url('../assets/img/grayscale-sermon.jpg') fixed no-repeat;
+    height: 750px;
+    width: auto;
+    background-size: cover;
+
+    .content {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+
+        h1 {
+            font-size: 65px;
+            font-family: 'Crete Round', serif;
+        }
+
+        .text {
+            font-family: 'Didact Gothic', serif;
+            font-size: 20px;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-shadow: 1px 1px 15px #000;
+
+            .location {
+                border-right: solid 3px;
+            }
+        }
+    }
+}
+
+.service-location {
+    height: 600px;
+    background-color: white;
+    text-align: center;
+
+    .content {
+        height: 100%;
+
+        .text {
+            background: #D3D0BD;
+            font-family: 'Fjalla One', sans-serif;
+            height: 100%;
+
+            span {
+                padding-top: 55px;
+                font-size: 35px;
+                color: #2e5266;
+                text-shadow: 1px 1px 15px #fff;
+                display: block;
+                text-align: center;
+            }
+
+            .small {
+                padding-top: 5px;
+                font-size: 18px;
+                font-family: 'Didact Gothic';
+                padding-bottom: 55px;
+            }
+        }
+    }
+}
+
+.about-us {
+    color: white;
+    padding-bottom: 80px;
+    background-color: black;
+
+    h1 {
+        text-align: center;
+        padding: 100px 0 50px;
+    }
+}
+
