@@ -1,3 +1,30 @@
+.text {
+    background: WHITESMOKE;
+    font-family: 'Fjalla One', sans-serif;
+    height: 100%;
+
+    span {
+        padding-top: 55px;
+        font-size: 35px;
+        color: #2e5266;
+        text-shadow: 1px 1px 15px #fff;
+        display: block;
+        text-align: center;
+    }
+
+    .small {
+        padding-top: 5px;
+        font-size: 18px;
+        font-family: 'Didact Gothic';
+        padding-bottom: 55px;
+    }
+
+    .medium {
+        font-size: 25px;
+        font-family: 'Didact Gothic';
+    }
+}
+
 .title {
     background: url('../assets/img/grayscale-sermon.jpg') fixed no-repeat;
     height: 750px;
@@ -14,7 +41,7 @@
             font-family: 'Crete Round', serif;
         }
 
-        .text {
+        .title-text {
             font-family: 'Didact Gothic', serif;
             font-size: 20px;
             color: white;
@@ -32,45 +59,50 @@
 }
 
 .service-location {
-    height: 600px;
+    height: 700px;
     background-color: white;
     text-align: center;
 
     .content {
         height: 100%;
+    }
+}
 
-        .text {
-            background: #D3D0BD;
-            font-family: 'Fjalla One', sans-serif;
-            height: 100%;
+.gallery-1 {
+    .text {
+        background-color: rgba(228, 235, 208, 0.945);
+        padding: 0px 200px;
 
-            span {
-                padding-top: 55px;
-                font-size: 35px;
-                color: #2e5266;
-                text-shadow: 1px 1px 15px #fff;
-                display: block;
-                text-align: center;
-            }
+        .big {
+            padding-bottom: 15px;
+        }
+    }
 
-            .small {
-                padding-top: 5px;
-                font-size: 18px;
-                font-family: 'Didact Gothic';
-                padding-bottom: 55px;
-            }
+    .grid-x {
+        padding: 10px 200px;
+        background-color: rgba(228, 235, 208, 0.945);
+
+        .small-6 {
+            height: 300px;
+            padding-right: 20px;
+            overflow: hidden;
         }
     }
 }
 
 .about-us {
-    color: white;
-    padding-bottom: 80px;
-    background-color: black;
+    background-color: WHITESMOKE;
+    
+    .text {
+        background-color: WHITESMOKE;
 
-    h1 {
-        text-align: center;
-        padding: 100px 0 50px;
+        .clickable {
+            padding: 50px;
+            border: solid 1.5px #2e5266;
+            font-weight: bold;
+        }
     }
 }
+
+
 
