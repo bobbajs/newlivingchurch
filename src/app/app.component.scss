@@ -69,6 +69,9 @@
 }
 
 .gallery-1 {
+    background-color: rgba(228, 235, 208, 0.945);
+    padding-bottom: 70px;
+
     .text {
         background-color: rgba(228, 235, 208, 0.945);
         padding: 0px 200px;
@@ -79,7 +82,10 @@
     }
 
     .grid-x {
-        padding: 10px 200px;
+        // padding: 10px 200px;
+        width: 75%;
+        margin: auto;
+        padding: 10px;
         background-color: rgba(228, 235, 208, 0.945);
 
         .small-6 {
@@ -101,6 +107,23 @@
             border: solid 1.5px #2e5266;
             font-weight: bold;
         }
+    }
+}
+
+.gallery{
+    height: 600px;
+    background: url('../assets/img/worship-grayscale-crop.jpg') no-repeat;
+}
+
+.actions {
+    height: 400px;
+    background: hsl(0, 0%, 26%);
+    color: white;
+
+    .grid-x {
+        width: 70%;
+        margin: auto;
+        
     }
 }
 
