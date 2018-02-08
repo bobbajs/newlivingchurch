@@ -116,14 +116,69 @@
 }
 
 .actions {
-    height: 400px;
+    height: auto;
     background: hsl(0, 0%, 26%);
     color: white;
 
     .grid-x {
         width: 70%;
         margin: auto;
+        height: 100%;
+
+        padding: 80px 0;
         
+        * {
+            display: block;
+        }
+
+        .liner {
+            border-right: solid 2px;
+        }
+        
+    }
+
+    .text {
+        background: none;
+
+        .big, .small {
+            color: white;
+            text-shadow: none;
+        }
+
+        .action-box {
+            width: 50%;
+            text-align: center;
+            outline: solid 3px;
+            padding: 20px;
+            margin: auto;
+
+            a {
+                color: white;
+            }
+        }
+    }
+}
+
+.footer {
+    height: 200px;
+    padding: 50px;
+    background: black;
+
+    .text {
+        background: none;
+        color: white;
+        text-align: center;
+
+        .small {
+            color: white;
+            text-shadow: none;
+            padding: 0px;
+        }
+
+        h3 {
+            font-family: 'Crete Round', Serif;
+            margin: 0px;
+        }
     }
 }
 
