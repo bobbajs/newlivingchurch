@@ -1,12 +1,12 @@
 .text {
-    background: WHITESMOKE;
+    background: #ededed;
     font-family: 'Fjalla One', sans-serif;
     height: 100%;
 
     span {
         padding-top: 55px;
         font-size: 35px;
-        color: #2e5266;
+        color: #555D60;
         text-shadow: 1px 1px 15px #fff;
         display: block;
         text-align: center;
@@ -59,7 +59,7 @@
 }
 
 .service-location {
-    height: 700px;
+    height: 797px;
     background-color: white;
     text-align: center;
 
@@ -69,11 +69,11 @@
 }
 
 .gallery-1 {
-    background-color: rgba(228, 235, 208, 0.945);
+    background-color: #ededed;
     padding-bottom: 70px;
 
     .text {
-        background-color: rgba(228, 235, 208, 0.945);
+        background-color: none;
         padding: 0px 200px;
 
         .big {
@@ -86,7 +86,6 @@
         width: 75%;
         margin: auto;
         padding: 10px;
-        background-color: rgba(228, 235, 208, 0.945);
 
         .small-6 {
             height: 300px;
@@ -110,10 +109,42 @@
     }
 }
 
+.sermon {
+    height: 315px;
+    background: hsl(0, 0%, 26%);
+    color: white;
+
+    .text {
+        background: none;
+
+        .big, .small {
+            color: white;
+            text-shadow: none;
+        }
+
+        .small {
+            padding-bottom: 35px;
+        }
+
+        .action-box {
+            width: 30%;
+            text-align: center;
+            outline: solid 3px;
+            padding: 20px;
+            margin: auto;
+
+            a {
+                color: white;
+            }
+        }
+    }
+}
+
 .gallery{
     height: 600px;
     background: url('../assets/img/worship-grayscale-crop.jpg') no-repeat;
 }
+
 
 .actions {
     height: auto;
