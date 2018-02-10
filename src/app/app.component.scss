@@ -1,3 +1,5 @@
+
+
 .text {
     background: #ededed;
     font-family: 'Fjalla One', sans-serif;
@@ -32,6 +34,7 @@
     background-size: cover;
 
     .content {
+        display: table;
         height: 100%;
         width: 100%;
         text-align: center;
@@ -45,14 +48,17 @@
             font-family: 'Didact Gothic', serif;
             font-size: 20px;
             color: white;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            display: table-cell;
+            vertical-align: middle;
             text-shadow: 1px 1px 15px #000;
 
             .location {
                 border-right: solid 3px;
+            }
+
+            .grid-x {
+                width: 50%;
+                margin: auto;
             }
         }
     }
@@ -94,6 +100,7 @@
         }
     }
 }
+
 
 .about-us {
     background-color: WHITESMOKE;
@@ -140,6 +147,7 @@
 
             &:hover {
                 background: white;
+                opacity: 0.75;
                 a {
                     color: #424242;
                     text-decoration: underline;

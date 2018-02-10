@@ -1,4 +1,5 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import * as AOS from 'aos';
 
 declare var jquery:any;
 declare var $ :any;
@@ -10,6 +11,10 @@ declare var $ :any;
 })
 export class AppComponent {
   title = 'app';
+
+  ngOnInit(){
+    AOS.init();
+  }
 
   openSermonCloud(){
     window.open('http://www.sermoncloud.com/hfan-toronto/', '_blank');
