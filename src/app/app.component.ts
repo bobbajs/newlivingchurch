@@ -11,5 +11,7 @@ declare var $ :any;
 export class AppComponent {
   title = 'app';
 
-
+  openSermonCloud(){
+    window.open('http://www.sermoncloud.com/hfan-toronto/', '_blank');
+  }
 }
