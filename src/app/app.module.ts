@@ -1,16 +1,25 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { TranslateModule, TranslateStaticLoader, TranslateLoader} from 'ng2-translate'; 
+import { Http } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { AboutUsPopupComponent } from './about-us-popup/about-us-popup.component';
+
+export function createTranslateLoader( http: Http ) {
+	return new TranslateStaticLoader( http, 'locales/' );
+}
 
 @NgModule({
   declarations: [
-    AppComponent,
-    AboutUsPopupComponent
+    AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    TranslateModule.forRoot({
+      provide: TranslateLoader,
+      useFactory: (createTranslateLoader),
+      deps: [Http]
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

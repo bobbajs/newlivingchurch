@@ -1,0 +1,35 @@
+{
+    "titleSection": {
+        "churchName": "New Living Church",
+        "churchAddress": "36 Broadlands Blvd <br/> North York <br/> ON M3A 1J3",
+        "churchServiceTimes": "Sundays <br/> 2:30PM (Indonesian Service) <br/> 4:00PM (English Service) "
+    },
+
+    "serviceLocationSection" : {
+        "joinUs": "We are a warm and welcoming family of God <br/> where people from different nations grow together in Christ.<br/>Join us this Sunday.",
+        "needARide": "Need a ride? Connect with us."
+    },
+
+    "sermonSection": {
+        "latestMessage": "Latest Message",
+        "listenSermonSeries": "Listen to the latest message of our current sermon series!",
+        "sermonStation": "Sermon Station"
+    },
+
+    "aboutUsSection": {
+        "ourStory": "Our Story",
+        "story": "Begun in 2009 as a Toronto campus of the Vancouver-based multisite congregation HFAN, it was originally an Indonesian-speaking church, reaching out to Indonesians. In 2012, the church became independent from the Vancouver body and began an affiliation with The Jesus Network in Toronto. Through prayer, the church discerned a vision to broaden their outreach beyond Indonesian speakers. House for All Nations Toronto changed its name to New Living Church and began English services in 2016."
+    },
+
+    "connectSection": {
+        "connectTitle": "Connect",
+        "connectWithUs": "New to the city or looking for a home church? <br/> Reach out to us,  we'd love to meet you! <br/>",
+        "callUs": "Call US: 647-878-2408"
+    },
+
+    "footerSection": {
+        "churchName": "New Living Church",
+        "churchAddress": "36 Broadlands Blvd, North York, ON, Canada <br/>",
+        "churchPhone": "Ph. 647-878-2408"
+    }
+}

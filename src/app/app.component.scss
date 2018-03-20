@@ -1,5 +1,4 @@
 
-
 .text {
     background: #ededed;
     font-family: 'Fjalla One', sans-serif;
@@ -12,6 +11,16 @@
         text-shadow: 1px 1px 15px #fff;
         display: block;
         text-align: center;
+
+        @media only screen and (max-width:1000px) {
+            font-size: 25px;    
+        }
+
+        @media only screen and (max-width:640px) {
+            font-size: 18px;
+            padding-right: 20px;    
+            padding-left: 20px;
+        }
     }
 
     .small {
@@ -28,7 +37,7 @@
 }
 
 .title {
-    background: url('../assets/img/grayscale-sermon.jpg') fixed no-repeat;
+    background: url('../assets/img/grayscale-sermon.jpg') fixed no-repeat center;
     height: 750px;
     width: auto;
     background-size: cover;
@@ -61,6 +70,26 @@
                 margin: auto;
             }
         }
+
+        @media only screen and (max-width:1000px) {
+            h1 {
+                font-size: 60px;  
+            }
+
+            .title-text {
+                font-size: 15px;
+            }
+        }
+
+        @media only screen and (max-width:640px) {
+            h1 {
+                font-size: 35px;
+            }
+
+            .title-text {
+                font-size: 13px;
+            }
+        }
     }
 }
 
@@ -71,6 +100,14 @@
 
     .content {
         height: 100%;
+    }
+
+    @media only screen and (max-width:1000px) {
+        height: 755px;
+    }
+
+    @media only screen and (max-width:640px) {
+        height: 725px;
     }
 }
 
@@ -85,22 +122,41 @@
         .big {
             padding-bottom: 15px;
         }
+
+        @media only screen and (max-width:1000px) {
+            padding: 0px 100px;
+            .small {
+                font-size: 15px;
+            }
+        }
+
+        @media only screen and (max-width:640px) {
+            height: 0px 50px;
+            padding: 0px 40px;
+            .small {
+                font-size: 15px;
+            }
+        }
+
+    }
+
+    .show-for-small-only {
+        img {
+            padding: 10px 40px;
+        }
     }
 
     .grid-x {
-        // padding: 10px 200px;
         width: 75%;
         margin: auto;
-        padding: 10px;
+        margin-bottom: 20px;
+        height: auto;
 
         .small-6 {
-            height: 300px;
             padding-right: 20px;
-            overflow: hidden;
         }
     }
 }
-
 
 .about-us {
     background-color: WHITESMOKE;
@@ -159,9 +215,8 @@
 
 .gallery{
     height: 600px;
-    background: url('../assets/img/worship-grayscale-crop.jpg') no-repeat;
+    background: url('../assets/img/worship-grayscale-crop.jpg') no-repeat center;
 }
-
 
 .connect {
     height: 315px;

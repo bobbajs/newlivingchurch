@@ -1,18 +1,16 @@
 <section class="title">
   <div class="content">
-
     <div class="title-text">
         <div data-aos="fade-down" data-aos-duration="1500" data-aos-delay="300">
             <img src="..\assets\img\nlc-logo-green.jpg">
-            <h1>New Living Church</h1>
+            <h1>{{ 'titleSection.churchName' | translate }}</h1>
         </div>
-        
         <div class="grid-x">
           <div class="small-6 cell location" data-aos-duration="1500" data-aos="fade-right">
-            <span>36 Broadlands Blvd <br/> North York <br/> ON M3A 1J3</span>
+            <span [innerHTML]="'titleSection.churchAddress' | translate"></span>
           </div>
           <div class="small-6 cell" data-aos-duration="1500" data-aos="fade-left">
-            <span>Sundays <br/> 2:30PM (Indonesian Service) <br/> 4:00PM (English Service) </span>
+            <span [innerHTML]="'titleSection.churchServiceTimes' | translate"></span>
           </div>
         </div>
     </div>
@@ -21,44 +19,39 @@
 <section class="service-location">
   <div class="content">
     <div class="text">
-      <span class="big">
-        We are a warm and welcoming family of God <br/> where people from different nations grow together in Christ.<br/>
-        Join us this Sunday.
-      </span>
-      <span class="small">Need a ride? Connect with us.</span>
-
+      <span class="big" [innerHTML]="'serviceLocationSection.joinUs' | translate"></span>
+      <span class="small" [innerHTML]="'serviceLocationSection.needARide' | translate"></span>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.3467654099145!2d-79.32539348449927!3d43.74489537911833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cd88903938e1%3A0xa4308fc8144c8ed3!2s36+Broadlands+Blvd%2C+North+York%2C+ON+M3A+1J3!5e0!3m2!1sen!2sca!4v1515719147534" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe> 
     </div>
   </div>
 </section>
 <section class="sermon">
   <div class="text">
-    <div class="">
-      <span class="big">Latest Message</span>
-      <span class="small">Listen to the latest message from our current sermon series, "The 1 True Gospel".</span>
+    <div>
+      <span class="big">{{ 'sermonSection.latestMessage' | translate }}</span>
+      <span class="small">{{ 'sermonSection.listenSermonSeries' | translate }}</span>
       <div class="action-box" (click)="openSermonCloud()">
-        <a>Sermon Station</a>
+        <a>{{ 'sermonSection.sermonStation' | translate }}</a>
       </div>
     </div>
   </div>
-</section>
-<section class="gallery">
-
-</section>
+  </section>
+  <section class="gallery"></section>
 <section class="gallery-1">
   <div class="text">
-    <span class="big">Our Story</span>
-    <span class="small">Begun in 2009 as a Toronto campus of the Vancouver-based multisite congregation HFAN, it was originally an Indonesian-speaking church, reaching out to Indonesians. In 2012, the church became independent from the Vancouver body and began an affiliation with The Jesus Network in Toronto. Through prayer, the church discerned a vision to broaden their outreach beyond Indonesian speakers. House for All Nations Toronto changed its name to New Living Church and began English services in 2016.</span>
+    <span class="big">{{ 'aboutUsSection.ourStory' | translate}}</span>
+    <span class="small">{{ 'aboutUsSection.story' | translate }}</span>
   </div>
-  <div class="grid-x">
-    <div class="small-6">
-      <img src="..\assets\img\chat.jpg">
+  <div class="hide-for-small-only">
+    <div class="grid-x">
+      <div class="small-6 medium-6 large-6">
+        <img src="..\assets\img\chat.jpg">
+      </div>
+      <div class="small-6 medium-6 large-6">
+        <img src="..\assets\img\birthday.jpg">
+      </div>
     </div>
-    <div class="small-6">
-      <img src="..\assets\img\laugh2.jpg">
-    </div>
-  </div>
-  <div class="grid-x">
+    <div class="grid-x">
       <div class="small-6">
         <img src="..\assets\img\food.jpg">
       </div>
@@ -66,22 +59,31 @@
         <img src="..\assets\img\youth.jpg">
       </div>
     </div>
+  </div>
+  <div class="show-for-small-only">
+    <div>
+      <img src="..\assets\img\chat.jpg">
+      <img src="..\assets\img\laugh2.jpg">
+      <img src="..\assets\img\food.jpg">
+      <img src="..\assets\img\youth.jpg">
+    </div>
+  </div>
 </section>
 <section class="connect">
   <div class="text">
     <div>
-      <span class="big">Connect</span>
-      <span class="small">New to the city or looking for a home church? <br/> Reach out to us,  we'd love to meet you! <br/></span>
+      <span class="big">{{ 'connectSection.connectTitle' | translate }}</span>
+      <span class="small" [innerHTML]=" 'connectSection.connectWithUs' | translate"></span>
       <div class="action-box">
-        <a>Call us: 647-878-2408</a>
+        <a>{{ 'connectSection.callUs' | translate }}</a>
       </div>
     </div>
   </div>
 </section>
 <section class="footer">
   <div class="text">
-    <h3>New Living Church</h3>
-    <span class="small">36 Broadlands Blvd, North York, ON, Canada <br/></span>
-    <span class="small">Ph. 647-878-2408</span>
+    <h3>{{ 'footerSection.churchName' | translate }}</h3>
+    <span class="small" [innerHTML]="'footerSection.churchAddress' | translate"></span>
+    <span class="small">{{ 'footerSection.churchPhone' | translate }}</span>
   </div>
 </section>

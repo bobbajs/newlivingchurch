@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as AOS from 'aos';
+import {TranslateService }from 'ng2-translate';
 
 declare var jquery:any;
 declare var $ :any;
@@ -11,6 +12,11 @@ declare var $ :any;
 })
 export class AppComponent {
   title = 'app';
+
+  constructor(private translate: TranslateService) {
+    this.translate.setDefaultLang('en');
+    this.translate.use('en');
+  }
 
   ngOnInit(){
     AOS.init();
